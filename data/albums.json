@@ -1,25 +1,6 @@
 {
   "albums": [
-    {
-      "id": "sample-wedding-2024",
-      "title": "John & Sarah's Wedding",
-      "category": "weddings",
-      "date": "2024-01-15",
-      "description": "A beautiful winter wedding celebration",
-      "coverPhotoId": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
-      "folderLink": "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID",
-      "photos": []
-    },
-    {
-      "id": "sample-graduation-2024",
-      "title": "University Graduation 2024",
-      "category": "graduations",
-      "date": "2024-03-20",
-      "description": "Capturing moments of achievement",
-      "coverPhotoId": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
-      "folderLink": "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID",
-      "photos": []
-    },
+    
     {
       "id": "nethmi-graduation-2025",
       "title": "Nethmi",
