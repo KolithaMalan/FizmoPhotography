@@ -1,0 +1,107 @@
+{
+  "albums": [
+    {
+      "id": "sample-wedding-2024",
+      "title": "John & Sarah's Wedding",
+      "category": "weddings",
+      "date": "2024-01-15",
+      "description": "A beautiful winter wedding celebration",
+      "coverPhotoId": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
+      "folderLink": "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID",
+      "photos": []
+    },
+    {
+      "id": "sample-graduation-2024",
+      "title": "University Graduation 2024",
+      "category": "graduations",
+      "date": "2024-03-20",
+      "description": "Capturing moments of achievement",
+      "coverPhotoId": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
+      "folderLink": "https://drive.google.com/drive/folders/REPLACE_WITH_FOLDER_ID",
+      "photos": []
+    },
+    {
+      "id": "nethmi-graduation-2025",
+      "title": "Nethmi",
+      "category": "graduations",
+      "date": "2025-01-20",
+      "description": "Graduation photography session for Nethmi",
+      "coverPhotoId": "19213txOtPBlwkSySVwJpb52pmaHjJBA9",
+      "folderLink": "",
+      "photos": [
+        { "id": "1HfI1bA3jxRZIGIuMd8glRWCJEeys5c3o", "caption": "Graduation highlight" },
+        { "id": "1tscdBRUutCPgI62zLVIt7WTce-_DDJVo", "caption": "" },
+        { "id": "1UVChlHd6U3ncAyewhTyBksbPSTRN641J", "caption": "" },
+        { "id": "1-AGU_TuSRcYx0QHIvVL5LetiYLJFauJj", "caption": "" },
+        { "id": "1z9l4d2TsyiuxuA7Qyn_1V1hwIkk_3ljI", "caption": "" },
+        { "id": "1mMIIrTDIq0O6z7y_Pm_EFNhpOjFGttDW", "caption": "" },
+        { "id": "1eslodDB2KZicvcKiOcNf37l58FqMaS_s", "caption": "" },
+        { "id": "1e3F3u71qDOh5F4nZb57DhtDhBlxbn8LG", "caption": "" },
+        { "id": "1L1zwVtvYVxBk82hrZEu_jiL2okL5k9ab", "caption": "" },
+        { "id": "1zeuZeHum44pyKgIPAfi-oX-TpsxjGKhn", "caption": "" },
+        { "id": "1oStxuIQOdtcFM0anxfL1QIVf0_mnnoNS", "caption": "" },
+        { "id": "16eT-RmwHayrg31kARw8x7UNFe3GiIrxI", "caption": "" },
+        { "id": "12yERtVjdfcjaeO2vcI9QQ38l9oXsrCl0", "caption": "" },
+        { "id": "1IkmBSkuSKzv3A8EwKPg07TLZSZbqDXkI", "caption": "" },
+        { "id": "1MPgukFTsQ39SX1Fc2gcoODbeo5is5Gjg", "caption": "" },
+        { "id": "1HIPRqP3120fc1pB0Vfj6TwYUC8XhVoR9", "caption": "" }
+      ]
+    },
+    {
+      "id": "kavithma-graduation-2025",
+      "title": "Kavithma",
+      "category": "graduations",
+      "date": "2025-01-25",
+      "description": "Graduation photography session for Kavithma",
+      "coverPhotoId": "1ntHZns9x1MkoEfF4-lwEiNmEtJm0zz-q",
+      "folderLink": "",
+      "photos": [
+        { "id": "1ntHZns9x1MkoEfF4-lwEiNmEtJm0zz-q", "caption": "Graduation highlight" },
+        { "id": "1y4OVJVNEmG2pXlscMiTjgsIe3RfJue3L", "caption": "" },
+        { "id": "1cUqhf0BFJeqzYMJmpfatJ4uKH8kCWJF1", "caption": "" },
+        { "id": "1thz0PpcXHgEXd2sxhyTuQE9E95J4sJEg", "caption": "" },
+        { "id": "1EtSEI7vWU3wFZCwpS41Fd6zS_F0u3Xul", "caption": "" },
+        { "id": "1tmvgzUsycDrI2iViWNZ-YOjC1FbqbZKx", "caption": "" },
+        { "id": "1B7fBXgq0ZQUKw72medLFp8Kqnt-0mAMq", "caption": "" },
+        { "id": "12zYWsg1L4CZkOMCj2Cfbw-KUeB9L37ll", "caption": "" },
+        { "id": "1NUlSjGgXW2SytLao_qkiU66zmFKwNNEf", "caption": "" },
+        { "id": "1eD8aJ1ORxkHwGGXgY_kxH9mUPrXD47kQ", "caption": "" },
+        { "id": "1z0xA4P6YQYViZXXJFj4Q8EmpbnBSgBDY", "caption": "" },
+        { "id": "1ei96F7UnMgugZtH5_rgtLj6BF9LGfdBg", "caption": "" },
+        { "id": "10Rt90jbEJt0FkVYWpN_g_vR45oAS-xdm", "caption": "" },
+        { "id": "1YX5ZcFwMRiuv6n8YLVV3EBiBPmkRMH0r", "caption": "" },
+        { "id": "14KOk4XW3kNU4CSpTqAPmKai8euQ2X8_8", "caption": "" },
+        { "id": "1GeMsmBQqd2Znl_Uc6ETnfcOGbV3G8u-S", "caption": "" },
+        { "id": "199gv0HOU5eDcDk7gQczlLaQ9i0osQHRm", "caption": "" },
+        { "id": "1M7XgxVBlYyHTGQpbzpr6z7wsk8-F06EB", "caption": "" },
+        { "id": "1beVmX54nF4DRRPm7-bcaAqQ7iPtuXoOw", "caption": "" }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "events",
+      "name": "Events",
+      "description": "Corporate events, parties, and special occasions",
+      "icon": "🎉"
+    },
+    {
+      "id": "graduations",
+      "name": "Graduations",
+      "description": "Capture your academic achievements",
+      "icon": "🎓"
+    },
+    {
+      "id": "weddings",
+      "name": "Weddings",
+      "description": "Your special day, beautifully captured",
+      "icon": "💒"
+    },
+    {
+      "id": "birthdays",
+      "name": "Birthdays",
+      "description": "Birthday celebrations and parties",
+      "icon": "🎂"
+    }
+  ]
+}
