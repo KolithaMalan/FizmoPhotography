@@ -26,7 +26,7 @@
       "category": "graduations",
       "date": "2025-01-20",
       "description": "Graduation photography session for Nethmi",
-      "coverPhotoId": "19213txOtPBlwkSySVwJpb52pmaHjJBA9",
+      "coverPhotoId": "1HfI1bA3jxRZIGIuMd8glRWCJEeys5c3o",
       "folderLink": "",
       "photos": [
         { "id": "1HfI1bA3jxRZIGIuMd8glRWCJEeys5c3o", "caption": "Graduation highlight" },
@@ -76,32 +76,41 @@
         { "id": "1M7XgxVBlYyHTGQpbzpr6z7wsk8-F06EB", "caption": "" },
         { "id": "1beVmX54nF4DRRPm7-bcaAqQ7iPtuXoOw", "caption": "" }
       ]
+    },
+    {
+      "id": "supun-graduation-2025",
+      "title": "Supun",
+      "category": "graduations",
+      "date": "2025-01-30",
+      "description": "Graduation photography session for Supun",
+      "coverPhotoId": "1I858S5f_Uw0ly88Q3vtItvf9AbdGKdMo",
+      "folderLink": "",
+      "photos": [
+        { "id": "1I858S5f_Uw0ly88Q3vtItvf9AbdGKdMo", "caption": "Graduation highlight" },
+        { "id": "1KDB_Th11lgRa3DtpIbdLkJ1QoA0R5TGp", "caption": "" },
+        { "id": "1Llzfg2zBNVxW1eX5V3381tqYLbDnWyUS", "caption": "" },
+        { "id": "1VB-hq5sjA7iG23K7PucPWbSpNoYoG_jZ", "caption": "" },
+        { "id": "1QcLLUm39LUOy1yth9c4Q9470kT1TugKG", "caption": "" },
+        { "id": "1jc6KBaBQ4U1u0M2tdmtJ5awZkonaRKf1", "caption": "" },
+        { "id": "1fccJAabX_yyPw-s1YNP3WNpTjSU9q1rI", "caption": "" },
+        { "id": "1u72omoYvbZ91OGnnOpK43zJlu-5T8XWn", "caption": "" },
+        { "id": "12XmJYlLe-ieQuYkP2dbc4MM7evbEQTE_", "caption": "" },
+        { "id": "1EFrxHk702XTBh4awF7nlvMmnEdf9-hPF", "caption": "" },
+        { "id": "1auZnJ2eGhBm1o-yoayt0q3cRTI8GFdR-", "caption": "" },
+        { "id": "1x0hASw8yLKFkH7ABZd4walfVgoELudX5", "caption": "" },
+        { "id": "14ZF_IUZZuhQ1nLVjaJcyzHD4WV9rSaCC", "caption": "" },
+        { "id": "1qYRJSK3fVMRe2BWBqhaqmWlFxO6DUVwU", "caption": "" },
+        { "id": "1rSSRIPAgTiyu3_cTvZtHD2oHGHmQv5DW", "caption": "" },
+        { "id": "1a3ZZp2sadyk0RC4Ikg2EkwP7eOgyZTXL", "caption": "" },
+        { "id": "1qQLRiDE77boHChbeSKcXraAYzz1hW7rH", "caption": "" },
+        { "id": "11GqUf9SkL1_e1SrN9g0Zj5Gt-IEC3uFi", "caption": "" }
+      ]
     }
   ],
   "categories": [
-    {
-      "id": "events",
-      "name": "Events",
-      "description": "Corporate events, parties, and special occasions",
-      "icon": "🎉"
-    },
-    {
-      "id": "graduations",
-      "name": "Graduations",
-      "description": "Capture your academic achievements",
-      "icon": "🎓"
-    },
-    {
-      "id": "weddings",
-      "name": "Weddings",
-      "description": "Your special day, beautifully captured",
-      "icon": "💒"
-    },
-    {
-      "id": "birthdays",
-      "name": "Birthdays",
-      "description": "Birthday celebrations and parties",
-      "icon": "🎂"
-    }
+    { "id": "events", "name": "Events", "description": "Corporate events, parties, and special occasions", "icon": "🎉" },
+    { "id": "graduations", "name": "Graduations", "description": "Capture your academic achievements", "icon": "🎓" },
+    { "id": "weddings", "name": "Weddings", "description": "Your special day, beautifully captured", "icon": "💒" },
+    { "id": "birthdays", "name": "Birthdays", "description": "Birthday celebrations and parties", "icon": "🎂" }
   ]
 }
