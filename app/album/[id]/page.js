@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,6 +14,8 @@ export default function AlbumPage() {
     const [album, setAlbum] = useState(null);
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+    const [imageLoading, setImageLoading] = useState(false);
+    const [imageError, setImageError] = useState(false);
 
     useEffect(() => {
         const albumData = getAlbumById(params.id);
@@ -31,34 +33,40 @@ export default function AlbumPage() {
         return () => document.removeEventListener('contextmenu', handleContextMenu);
     }, []);
 
+    const navigatePhoto = useCallback((direction) => {
+        if (!album?.photos?.length) return;
+        const newIndex = currentPhotoIndex + direction;
+        if (newIndex >= 0 && newIndex < album.photos.length) {
+            setCurrentPhotoIndex(newIndex);
+            setImageLoading(true);
+            setImageError(false);
+        }
+    }, [album, currentPhotoIndex]);
+
     // Keyboard navigation for lightbox
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (!lightboxOpen) return;
-            if (e.key === 'Escape') setLightboxOpen(false);
+            if (e.key === 'Escape') closeLightbox();
             if (e.key === 'ArrowLeft') navigatePhoto(-1);
             if (e.key === 'ArrowRight') navigatePhoto(1);
         };
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [lightboxOpen, currentPhotoIndex, album]);
-
-    const navigatePhoto = (direction) => {
-        if (!album?.photos?.length) return;
-        const newIndex = currentPhotoIndex + direction;
-        if (newIndex >= 0 && newIndex < album.photos.length) {
-            setCurrentPhotoIndex(newIndex);
-        }
-    };
+    }, [lightboxOpen, navigatePhoto]);
 
     const openLightbox = (index) => {
         setCurrentPhotoIndex(index);
         setLightboxOpen(true);
+        setImageLoading(true);
+        setImageError(false);
         document.body.style.overflow = 'hidden';
     };
 
     const closeLightbox = () => {
         setLightboxOpen(false);
+        setImageLoading(false);
+        setImageError(false);
         document.body.style.overflow = '';
     };
 
@@ -128,6 +136,7 @@ export default function AlbumPage() {
                                         viewport={{ once: true, margin: '-50px' }}
                                         transition={{ duration: 0.5, delay: index * 0.05 }}
                                         onClick={() => openLightbox(index)}
+                                        style={{ cursor: 'pointer' }}
                                     >
                                         {thumbnailUrl ? (
                                             <img
@@ -195,13 +204,40 @@ export default function AlbumPage() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <img
-                                src={getGoogleDriveImageUrl(album.photos[currentPhotoIndex].id)}
-                                alt={album.photos[currentPhotoIndex].caption || ''}
-                                className={styles.lightboxImage}
-                                draggable="false"
-                            />
-                            {album.photos[currentPhotoIndex].caption && (
+                            {imageLoading && !imageError && (
+                                <div className={styles.lightboxLoading}>
+                                    <div className={styles.lightboxSpinner}></div>
+                                    <p>Loading photo...</p>
+                                </div>
+                            )}
+                            {imageError ? (
+                                <div className={styles.lightboxError}>
+                                    <p>Failed to load image</p>
+                                    <button
+                                        className={styles.retryBtn}
+                                        onClick={() => {
+                                            setImageError(false);
+                                            setImageLoading(true);
+                                        }}
+                                    >
+                                        Retry
+                                    </button>
+                                </div>
+                            ) : (
+                                <img
+                                    src={getGoogleDriveImageUrl(album.photos[currentPhotoIndex].id)}
+                                    alt={album.photos[currentPhotoIndex].caption || ''}
+                                    className={styles.lightboxImage}
+                                    draggable="false"
+                                    style={{ display: imageLoading ? 'none' : 'block' }}
+                                    onLoad={() => setImageLoading(false)}
+                                    onError={() => {
+                                        setImageLoading(false);
+                                        setImageError(true);
+                                    }}
+                                />
+                            )}
+                            {album.photos[currentPhotoIndex].caption && !imageLoading && !imageError && (
                                 <div className={styles.lightboxCaption}>
                                     {album.photos[currentPhotoIndex].caption}
                                 </div>
@@ -226,3 +262,4 @@ export default function AlbumPage() {
         </div>
     );
 }
+

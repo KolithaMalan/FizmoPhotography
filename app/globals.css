@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Primary Colors - Vibrant */
-  --primary: #8B5CF6;
-  --primary-light: #A78BFA;
-  --primary-dark: #6D28D9;
+  /* Primary Colors - Black Theme */
+  --primary: #1a1a1a;
+  --primary-light: #333333;
+  --primary-dark: #000000;
 
   /* Secondary Colors */
-  --secondary: #EC4899;
-  --secondary-light: #F472B6;
+  --secondary: #444444;
+  --secondary-light: #666666;
 
   /* Accent Colors */
   --accent-gold: #F59E0B;
@@ -16,11 +16,11 @@
   --accent-coral: #FB7185;
   --accent-blue: #3B82F6;
 
-  /* Background & Surface - Light Dark Theme */
-  --background: #1A1A2E;
-  --background-light: #16213E;
-  --surface: #0F3460;
-  --surface-light: #1A4A7A;
+  /* Background & Surface - Black Theme */
+  --background: #0a0a0a;
+  --background-light: #111111;
+  --surface: #1a1a1a;
+  --surface-light: #2a2a2a;
   --card-bg: rgba(255, 255, 255, 0.05);
   --card-bg-hover: rgba(255, 255, 255, 0.1);
 
@@ -29,20 +29,20 @@
   --text-muted: #94A3B8;
   --text-light: #64748B;
 
-  /* Gradients - Colorful */
-  --gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
-  --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #EC4899 100%);
-  --gradient-cool: linear-gradient(135deg, #14B8A6 0%, #3B82F6 50%, #8B5CF6 100%);
-  --gradient-bg: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
-  --gradient-card: linear-gradient(145deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+  /* Gradients - Black Theme */
+  --gradient-primary: linear-gradient(135deg, #1a1a1a 0%, #333333 50%, #1a1a1a 100%);
+  --gradient-warm: linear-gradient(135deg, #222222 0%, #333333 100%);
+  --gradient-cool: linear-gradient(135deg, #111111 0%, #222222 50%, #333333 100%);
+  --gradient-bg: linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #1a1a1a 100%);
+  --gradient-card: linear-gradient(145deg, rgba(30, 30, 30, 0.3) 0%, rgba(50, 50, 50, 0.3) 100%);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-  --shadow-colored: 0 10px 40px -10px rgba(139, 92, 246, 0.5);
-  --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.3);
+  --shadow-colored: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(0, 0, 0, 0.3);
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .text-gradient {
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -146,26 +146,27 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--gradient-primary);
+  background: #1a1a1a;
   color: white;
   box-shadow: var(--shadow-colored);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 50px -10px rgba(139, 92, 246, 0.6);
+  background: #333333;
+  box-shadow: 0 15px 50px -10px rgba(0, 0, 0, 0.6);
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.1);
   color: var(--text);
-  border: 2px solid rgba(139, 92, 246, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: rgba(139, 92, 246, 0.2);
-  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
   color: var(--text);
 }
 
@@ -181,23 +182,23 @@ a:hover {
 }
 
 .badge-events {
-  background: rgba(139, 92, 246, 0.2);
-  color: var(--primary-light);
+  background: rgba(50, 50, 50, 0.5);
+  color: #e0e0e0;
 }
 
 .badge-graduations {
-  background: rgba(20, 184, 166, 0.2);
-  color: var(--accent-teal);
+  background: rgba(50, 50, 50, 0.5);
+  color: #e0e0e0;
 }
 
 .badge-weddings {
-  background: rgba(236, 72, 153, 0.2);
-  color: var(--secondary-light);
+  background: rgba(50, 50, 50, 0.5);
+  color: #e0e0e0;
 }
 
 .badge-birthdays {
-  background: rgba(245, 158, 11, 0.2);
-  color: var(--accent-gold);
+  background: rgba(50, 50, 50, 0.5);
+  color: #e0e0e0;
 }
 
 /* Disable image download */
@@ -224,21 +225,21 @@ img[data-protected="true"] {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: #333;
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-light);
+  background: #555;
 }
 
 /* Selection */
 ::selection {
-  background: var(--primary);
+  background: #333;
   color: white;
 }
 

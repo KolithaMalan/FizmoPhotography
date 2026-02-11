@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(180deg, #111111 0%, #000000 100%);
     padding: 4rem 0 2rem;
     margin-top: 4rem;
 }
@@ -13,14 +13,14 @@
 .quoteSection {
     text-align: center;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .quote {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.25rem, 3vw, 1.75rem);
     font-style: italic;
-    color: #a78bfa;
+    color: #cccccc;
 }
 
 .content {
@@ -78,7 +78,7 @@
 }
 
 .links a:hover {
-    color: #a78bfa;
+    color: #ffffff;
 }
 
 .contact {
@@ -127,21 +127,21 @@
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: #a78bfa;
+    color: #cccccc;
     font-size: 1.1rem;
     transition: all var(--transition-normal);
 }
 
 .socialLink:hover {
-    background: #a78bfa;
-    color: white !important;
+    background: #ffffff;
+    color: #000000 !important;
     transform: translateY(-2px);
 }
 
 .copyright {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: #9ca3af;
     font-size: 0.85rem;
 }

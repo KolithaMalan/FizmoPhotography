@@ -7,14 +7,14 @@
 .header {
     position: relative;
     padding: 4rem 0;
-    background: var(--surface);
+    background: #1a1a1a;
     overflow: hidden;
 }
 
 .headerBackground {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--surface) 0%, rgba(124, 58, 237, 0.1) 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, rgba(40, 40, 40, 0.3) 100%);
 }
 
 .headerContent {
@@ -27,20 +27,20 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: white;
-    border: 1px solid var(--surface);
+    background: #333333;
+    border: 1px solid #444444;
     padding: 0.5rem 1rem;
     border-radius: var(--radius-full);
     font-size: 0.875rem;
-    color: var(--text-muted);
+    color: #cccccc;
     cursor: pointer;
     margin-bottom: 1.5rem;
     transition: all var(--transition-normal);
 }
 
 .backBtn:hover {
-    color: var(--primary);
-    border-color: var(--primary-light);
+    color: #ffffff;
+    border-color: #666666;
 }
 
 .headerContent h1 {
@@ -61,7 +61,7 @@
 
 /* Photos Section */
 .photosSection {
-    background: white;
+    background: #0a0a0a;
 }
 
 .photosGrid {
@@ -259,6 +259,54 @@
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+.lightboxLoading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 200px;
+}
+
+.lightboxSpinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.lightboxError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 200px;
+}
+
+.lightboxError p {
+    font-size: 1.1rem;
+}
+
+.retryBtn {
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.retryBtn:hover {
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* Not Found */

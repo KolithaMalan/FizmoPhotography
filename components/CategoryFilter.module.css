@@ -12,41 +12,41 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.25rem;
-    background: white;
-    border: 2px solid #e5e7eb;
+    background: #1a1a1a;
+    border: 2px solid #333333;
     border-radius: var(--radius-full);
     font-size: 0.9rem;
     font-weight: 500;
-    color: #6b7280;
+    color: #aaaaaa;
     cursor: pointer;
     transition: all var(--transition-normal);
     overflow: visible;
 }
 
 .button:hover {
-    border-color: #a78bfa;
-    color: #7c3aed;
+    border-color: #555555;
+    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .active {
     color: white !important;
     border-color: transparent;
     font-weight: 600;
-    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
 }
 
 .active:hover {
     color: white !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .activeIndicator {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
     z-index: 0;
     border-radius: var(--radius-full);
 }
