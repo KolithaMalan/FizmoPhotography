@@ -1,6 +1,5 @@
 {
   "albums": [
-    
     {
       "id": "nethmi-graduation-2025",
       "title": "Nethmi",
@@ -85,6 +84,29 @@
         { "id": "1a3ZZp2sadyk0RC4Ikg2EkwP7eOgyZTXL", "caption": "" },
         { "id": "1qQLRiDE77boHChbeSKcXraAYzz1hW7rH", "caption": "" },
         { "id": "11GqUf9SkL1_e1SrN9g0Zj5Gt-IEC3uFi", "caption": "" }
+      ]
+    },
+    {
+      "id": "Dinithi 21st Birthday",
+      "title": "Dinithi's 21st Birthday",
+      "category": "birthdays",
+      "date": "2025-02-01",
+      "description": "Birthday celebration photography session",
+      "coverPhotoId": "18cgsC_HUwoo-bHieaAygaYqDXPhu8xH7",
+      "folderLink": "",
+      "photos": [
+        { "id": "18cgsC_HUwoo-bHieaAygaYqDXPhu8xH7", "caption": "Birthday highlight" },
+        { "id": "1G82XWnrzPoQTjz10ZEp6g320KBrptRKf", "caption": "" },
+        { "id": "1hRlGx0yBGBoVJzp58ue8m1rANX-N_CuQ", "caption": "" },
+        { "id": "1FG_rp92Np64ps4nU3EPbuKgzWTMpkgkW", "caption": "" },
+        { "id": "1ZGAGpSr8wp5yl4Qs3elWuvH3dMRZVPq1", "caption": "" },
+        { "id": "1DwpiM17yMwjYsXDdAGbEr5q-Luk1SGTz", "caption": "" },
+        { "id": "1ydkGMPM6CYq9qJFpO6pTroUut2EYnvNb", "caption": "" },
+        { "id": "1x0kNPBsS2todM065Jr_6xsQIbGP5U0LV", "caption": "" },
+        { "id": "17asQpNt90S7Fguqme10TuCPVJWiwZ2th", "caption": "" },
+        { "id": "1ZF0IeeQKa6fYidjLlXG3RQMauhhgaVKm", "caption": "" },
+        { "id": "1qS4CU1iutC0d-1hEz1l1FkQmqEyeQBBJ", "caption": "" },
+        { "id": "1yPDzx7bkpiECfbCNX8binDSPq02L3-WJ", "caption": "" }
       ]
     }
   ],
